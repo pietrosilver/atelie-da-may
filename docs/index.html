@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayra braids ateliê</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="/imgs/icone-may.jpeg" type="icone-may/x-icon" />
+</head>
+
+<body>
+  <main>
+   <div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a onclick="main()" class="nav-link active" href="#" id="ancor-1">Principal</a>
+      </li>
+      <li class="nav-item">
+        <a onclick="catalog()" class="nav-link" href="#" id="ancor-2">Catálogo</a>
+      </li>
+      <li class="nav-item">
+        <a onclick="budget()" class="nav-link" href="#" id="ancor-3">Orçamento</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body col-12" id="main">
+    <div class="row">
+        <div class="col-12 d-flex block justify-content-center flex-column-reverse align-items-center mb-0">
+    <img id="initial-photo" class="img-fluid" src="imgs/profile-photo.jpeg" alt="profile-photo" />  
+      <img id="title-logo" class="img-fluid" src="imgs/title-img.jpeg" alt="title-logo">
+     </div>
+
+    </div>  
+  </div>
+
+       <div id="description" class="card-body">
+        <div class="card-body col-12 d-flex justify-content-center align-items-center" id="years-old">
+          <img id="about-me" class="img-fluid" src="imgs/description-img.jpeg" alt="description-logo" loading="lazy">
+        </div>
+       </div>
+         
+
+     <div class="card-body col-12 hidden" id="catalog">
+        <div class="row d-flex justify-content-center">
+         <img id="catalog-title" class="img-fluid" src="imgs/catalog-img.jpeg" alt="catalog-img">
+        </div>
+       <div class="cotaniner pt-5" id="imgs-container">
+         <div class="row ">
+           <div class="col-6 mb-3">
+             <h5 id="img-title">Nagô braids com jumbo</h5>
+              <img class="img-responsive" src="imgs/nago-c-jumbo.jpeg" alt="trança-nago" id="img-1" loading="lazy">
+              <figcaption class="d-flex flex-column col-md-8"><span>cabeça inteira: R$150,00 a R$350,00</span>
+                <span>topo, frontal, lateral, semi preso: R$80, a R$200</span></figcaption>
+            </div>
+            <div class="col-6 mb-3">
+              <h5 id="img-title">Nagô braids sem jumbo</h5>
+              <img class="img-responsive" src="imgs/nago-sem-jumbo.jpeg" id="img-2" loading="lazy">
+              <figcaption class="d-flex flex-column col-md-8"><span>cabeça inteira: R$100,00 a R$200,00</span>
+                <span>topo, frontal, lateral, semi preso: R$40, a R$150</span></figcaption>
+            </div>
+           <div class="col-6 mb-3">
+              <h5 id="img-title" class="text-nowrap">Fulani braids</h5>
+              <img class="img-responsive" src="imgs/fulani-braids.jpeg" alt="" id="img-3" loading="lazy">
+              <figcaption class="d-flex flex-column col-md-8"><span>R$150,00 a R$350,00</span></figcaption>        
+            </div>
+           <div class="col-6 mb-3">
+              <h5 id="img-title" class="text-nowrap">Gipsy braids</h5>
+              <img class="img-responsive" src="imgs/gipsy.jpeg" alt="" id="img-4" loading="lazy">
+              <figcaption class="d-flex flex-column col-md-8"><span>R$250,00 a R$550,00</span></figcaption>
+            </div>
+            <div class="col-6 mb-3">
+              <h5 id="img-title" class="text-nowrap">Ponytail braids</h5>
+              <img class="img-responsive" src="imgs/pontytail.jpeg" alt="" id="img-5" loading="lazy">
+              <figcaption class="d-flex flex-column col-md-8"><span>R$160,00 a R$280,00</span></figcaption>           
+            </div>
+            <div class="col-6 mb-3">
+              <h5 id="img-title" class="text-nowrap">French-curly braids</h5>
+              <img class="img-responsive" src="imgs/french-curly-braids.jpeg" alt="" id="img-6" loading="lazy">
+              <figcaption class="d-flex flex-column col-md-8"><span>R$200,00 a R$400,00</span></figcaption>
+            </div>
+            <div class="col-6 mb-3">
+              <h5 id="img-title" class="text-nowrap">Boho braids</h5>
+              <img class="img-responsive" src="imgs/boho-braids.jpeg" alt="" id="img-7" loading="lazy">
+              <figcaption class="d-flex flex-column col-md-8"><span>R$100,00 a R$350,00</span></figcaption>
+            </div>
+            <div class="col-6 mb-3">
+              <h5 id="img-title" class="text-nowrap">Box braids</h5>
+              <img class="img-responsive" src="imgs/box-braids.jpeg" alt="" id="img-8" loading="lazy">
+              <figcaption class="d-flex flex-column col-md-8"><span>R$120,00 a R$470,00</span></figcaption>
+           </div>
+           <div class="col-6 mb-3">
+              <h5 id="img-title" class="text-nowrap">Knotless braids</h5>
+              <img class="img-responsive" src="imgs/knotless-braids.jpeg" alt="" id="img-8" loading="lazy">
+              <figcaption class="d-flex flex-column col-md-8"><span>R$170,00 a R$400,00</span></figcaption>
+           </div>
+           <div class=" col-6 mb-3">
+              <h5 id="img-title" class="text-nowrap">Outras....</h5>
+              <img class="img-responsive" src="imgs/outras.jpeg" alt="" id="img-8" loading="lazy">
+              <figcaption class="d-flex flex-column col-md-8">Valores a Combinar</figcaption>
+           </div>
+        </div>
+       </div>
+       </div>
+
+     <div class="card-body col-12 hidden" id="budget">
+        <div class="row">
+          <h2 class="text-center col-12">Faça seu orçamento</h2>
+        </div>
+        <div class="row">
+           <div class="col-12">
+            <form class="form-default card-header">
+              <label class="d-flex flex-column justify-content-center align-items-center pt-2 pb-2" for="select-braids">Selecione o tipo de Trança:
+                <select class="text-center" name="braids" id="select-braids" required>
+                  <option value="0">Nagô com jumbo</option>
+                  <option value="1">Nagô sem jumbo cabeça inteira</option>
+                  <option value="2">Nagô sem jumbo frente, topo, lateral, semi preso</option>
+                  <option value="3">Fulani braids</option>
+                  <option value="4">Gipsy braids</option>
+                  <option value="5">Pontytail braids</option>
+                  <option value="6">French-curly</option>
+                  <option value="7">Boho braids</option>
+                  <option value="8">Box-braids</option>
+                  <option value="9">Knotless-braids</option>
+                </select>
+                   <label class="d-flex flex-column pt-2 justify-content-center align-items-center" for="select-complexity">Complexidade:
+                    <select class="text-center" name="complexity-options" id="select-complexity" required>
+                      <option value="básico">Básica</option>
+                      <option value="médio">Média</option>
+                      <option value="elaborado">Elaborada</option>
+                      <option value="muito-elaborado">Muito elaborada</option>
+                    </select>
+                  </label>
+                    <label class="d-flex flex-column" for="cor">Cor do jumbo:
+                      <select name="select-color" id="cor">
+                          <option value="0">Preto</option>
+                          <option value="1">Castanho</option>
+                          <option value="2">Loiro</option>
+                          <option value="3">Colorido</option>
+                          <option value="4">Ruivo</option>
+                          <option value="5">Duas Cores</option>
+                          <option value="6">Mais de duas cores</option>
+                      </select>
+                   </label>
+                   <label class="d-flex flex-column" for="quantidade">Quantidade:
+                      <input id="quantidade" min="1" type="number" required/>
+                   </label>
+              </label>
+                <label class="col-md" for="add-btn">
+                  <button class="btn btn-sm" type="submit" id="add-btn">Adicionar</button>
+                </label>
+                  <div class="row">
+                     <div class="col-md d-flex justify-content-center flex-column pt-5">
+                     <h5 id="atention-description">Atenção!</h5>
+                     <span class="description-text pt-2 pb-2">As tranças<span style="font-weight: bold;"> BÁSICAS</span>: são divisões simples, espessuras M - G - GG, ponytail simples nagô meio preso, topo ou lateral, tranças sem cachos e comprimento máximo até a cintura</span> 
+                     <span class="description-text pt-2 pb-2">As tranças<span style="font-weight: bold;"> MÉDIAS</span>: são box braids ou knotless longas, boho com pouco volume, ponytail com nagô desenhada (desenho simples), espessuras P - M - G - GG, comprimento até a cintura, fulani simples.</span>
+                     <span class="description-text pt-2 pb-2">As tranças<span style="font-weight: bold;"> ELABORADAS</span>: são: nagôs desenhadas (zig-zag, coração, ondas e outros formatos criativos), knotless finas ou extra longas, boho volumosas com bastante cachos, fulani com acessórios (e muitos desenhos), ponytail com nagô desenhada elaborada e box braids micro ou extra longas.</span>
+                     <span class="description-text pt-2 pb-2">As tranças<span style="font-weight: bold;"> MUITO ELABORADAS</span>: são: gipsy braids com bastante volume de cachos, french-curly braids cheias e detalhadas, boho extra volumosas com finalização curly e box braids micro ou extra longas acompanhadas de acabamento especial e as tranças loiras (qualquer modelo).</span>
+                    </div>
+                    </div>
+            </form>
+           </div>
+        </div>
+         <div class="card-body col-12">
+           <div class="row">
+             <h5 class="col-12">Valor total do orçamento:</h5>
+              <div class="container-fluid d-flex flex-column" id="total-value">
+                <div class="container-fluid mb-3 hidden" id="loading">
+                  <img class="animation-img" src="https://media.istockphoto.com/id/1335247217/pt/vetorial/loading-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=9TMsDn9mlHkBoWsLRCGsDcQKVuzewZiDl1q_g6UtqyE=" loading="lazy">
+                </div>
+              </div>
+           </div>
+           <div class="row d-flex justify-content-center" id="container-for-scheduling"></div>
+         </div>
+     </div>  
+    </main> 
+</div>
+      <div class="card-footer mb-0 pb-5 py-3">
+          <div class="d-flex justify-content-center flex-column">
+            <h5 class="text-center">Meios de contato para agendamento</h5>
+                <div class="col d-flex justify-content-center">
+             <a id="insta-link" href="https://www.instagram.com/mayrabraidsatelie?igsh=MTl5eGwxdnV6YXVtNA==" target="_blank"><i class="fab fa-instagram"></i></a>
+             <a id="whats-link" href="https://wa.me/5511977541788?text=Olá%20gostaria%20de%20marcar%20uma%20trança!" target="_blank"><i class="fab fa-whatsapp pl-3"></i></a>
+              </div>
+               </div>  
+          </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js" defer></script>
+</body>
+
+</html>
