@@ -76,10 +76,10 @@ elaborado:320,
 
 {
 name:"boho braids",
-básico:100,
-médio:180,
-elaborado:260,
-"muito-elaborado":350,
+básico:180,
+médio:230,
+elaborado:360,
+"muito-elaborado":450,
 },
 
 {
