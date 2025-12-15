@@ -136,6 +136,9 @@ const colorPrice = [
   }
 ];
 
+ btnContainer.innerHTML = `<button class="btn btn-default sm" disabled>Adicione itens primeiro</button>`;
+
+
 const calc = () => {
   const braidName = braidType.value;
   const braidModel = braidValue.value;
@@ -160,8 +163,18 @@ const calc = () => {
 
 
 
-  if(amount.value <= 0 || amount.value === "" ) {
+  if(amount.value === 0 || amount.value === "" ) {
     alert("Você precisa adicionar uma quantidade");
+    
+    const index = 0;
+
+  
+    valueOfSum.splice(index, 1);
+    namesOfBraid.splice(index, 1);
+    namesOfComplexity.splice(index, 1);
+    nameOfColor.splice(index, 1);
+    quantity.splice(index, 1);
+    aditionalValue.splice(index, 1);
   }
   else {
     setTimeout(() => {
@@ -199,9 +212,8 @@ const calc = () => {
         </button> 
       </div>`;
     }, 3000);
-  }
-
-  return valuesMultiplied;
+     return valuesMultiplied;
+    }
 };
 
 const main = () => {
@@ -253,6 +265,7 @@ const budget = () => {
 btn.addEventListener("click", (e) => {
 
 e.preventDefault();
+
 calc();
 
 setTimeout(() => {
@@ -294,14 +307,6 @@ const updateValues = () => {
 };
 
 
-const msg = `
-Trança: ${namesOfBraid}
-Tipo: ${namesOfComplexity}
-Cor: ${nameOfColor}
-Qtd: ${quantity}
-Adicional: R$ ${aditionalValue}
-Total aproximado: R$ ${updateValues()}
-`;
 
 const createBtn = () => {
 
@@ -309,14 +314,6 @@ updateValues();
 
   const phone = "5511977541788";
 
-  if (namesOfBraid.length === 0) {
-    btnContainer.innerHTML = `
-      <button class="btn btn-default sm" disabled>Adicione itens primeiro</button>
-    `;
-    return;
-  }
-
-   
   let itens = namesOfBraid.map((nome, i) => {
     return ` ${nome} | Tipo: ${namesOfComplexity[i]} | Cor: ${nameOfColor[i]} | Qtd: ${quantity[i]} | Adicional: R$${aditionalValue[i]};
   `}).join("\n");
@@ -331,9 +328,17 @@ updateValues();
   let link = `https://wa.me/${phone}?text=${encodeURIComponent(mensagem)}`;
 
   
+  if (total === 0) {
+    btnContainer.innerHTML = `
+      <button class="btn btn-default sm" disabled>Adicione itens primeiro</button>
+    `;
+  }else {
+
+
   btnContainer.innerHTML = `
     <a href="${link}" id="agendar-link" target="_blank">
       <button class="btn btn-default sm" id="agendar-btn">Agendar</button>
     </a>
   `;
+  }
 };
